@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Survery</title>
+    <link href="styles.css" rel="stylesheet"/>
+  <body>
+    <div class="survey">
+      <main>
+  <h1 id="title">Cat Information Survey</h1>
+  <p id="description"><strong>Tell us about your cats breed, age, personality, and more</strong></p>
+  <form id="survey-form">
+    <fieldset>
+      <h3>Fill out the required information:</h3>
+      <h2>Required information*</h2>
+        <label for="cats-name"><strong>1. What is your cats name? <input placeholder="ex. Oliver" id="cats-name" name="cats-name" type="text" required /></label>
+        <h2>Not required information*</h2>
+        <label for="nickname">2. Does he/she have a nickname? (if so tell us!) <input placeholder="ex. Ollie (from Oliver)" id="nickname" name="nickname" type="text" /></label>
+        <h2>Required information*</h2>
+        <label id="name-label">3. What is your name? (first and last) <input placeholder="ex. Jane/John Doe"id="name" name="name" type="text" required /></label>
+        <h2>Required information*</h2>
+        <label id="email-label">4. What is your email address? <input placeholder="example@example.com"id="email" name="email" type="email" required /></label>
+        <h2>Required information*</h2>
+        <label id="number-label">5. What is your cats age? (0 for under 12 months) <input placeholder="0" id="number" name="cat-age" type="number" min="0" max="30" required /></label>
+        <h2>Required information*</h2>
+        <label for="number-label">6. What is your age? <input placeholder="18" id="number" name="age" type="number" min="16" max="100" required /></label>
+      </fieldset>
+   <fieldset>
+     <h3>Select the option that applies to each question:</h3>
+     <h2>Required information*</h2> 
+     <label for="breed">1. What is your cats breed?
+       <select class="inline" id="dropdown" name="breed">
+         <option value="">Select One</option>
+         <option value="1">Abyssinian</option>
+         <option value="2">American Bobtail</option>
+         <option value="3">American Curl</option>
+         <option value="4">American Shorthair</option>
+         <option value="5">American Wirehair</option>
+         <option value="6">Balinese</option>
+         <option value="7">Bengal</option>
+         <option value="8">Birman</option>
+         <option value="9">Bombay</option>
+         <option value="10">British Shorthair</option>
+         <option value="11">Burmese</option>
+         <option value="12">Chartreux</option>
+         <option value="13">Chausie</option>
+         <option value="14">Cornish Rex</option>
+         <option value="15">Cymric</option>
+         <option value="16">Devon Rex</option>
+         <option value="17">Domestic Non-Pedigreed Cat</option>
+         <option value="18">Egyptian Mau</option>
+         <option value="19">Exotic Shorthair</option>
+         <option value="20">Havana Brown</option>
+         <option value="21">Himalayan</option>
+         <option value="22">Japanese Bobtail</option>
+         <option value="23">Javanese</option>
+         <option value="24">Kurilian Bobtail</option>
+         <option value="25">LaPerm</option>
+         <option value="26">Maine Coon</option>
+         <option value="27">Manx</option>
+         <option value="28">Munchkin</option>
+         <option value="29">Norwegian Forest Cat</option>
+         <option value="30">Ocicat</option>
+         <option value="31">Oriental Shorthair</option>
+         <option value="32">Persian</option>
+         <option value="33">Peterbald</option>
+         <option value="34">Ragdoll</option>
+         <option value="35">Ragamuffin</option>
+         <option value="36">Russian Blue</option>
+         <option value="37">Savannah</option>
+         <option value="38">Scottish Fold</option>
+         <option value="39">Selkirk Rex</option>
+         <option value="40">Siamese</option>
+         <option value="41">Siberian</option>
+         <option value="42">Singapura</option>
+         <option value="43">Snowshoe</option>
+         <option value="44">Somali</option>
+         <option value="45">Sphynx</option>
+         <option value="46">Tonkinese</option>
+         <option value="47">Toyger</option>
+         <option value="48">Turkish Angora</option>
+         <option value="49">Turkish Van</option>
+         <option value="50">Ukrainian Levkoy</option>
+         <option value="51">Other Not Listed</option>
+         <option value="52">Interbred/mixed</option>
+         <option value="53">Don't know/unknown</option>
+         </select></label>
+         <h2>Required information*</h2>
+         <label for="fur-pattern">2. What is your cats fur pattern?
+         <select class="inline" id="fur-pattern" name="fur-pattern">
+           <option value="">Select one</option>
+           <option value="1">Solid (solid fur color)</option>
+           <option value="2">Tabby (spotted or stripped pattern)</option>
+           <option value="3">Piebald (bicolored or tricolored, not tabby patterned)</option>
+           <option value="4">Snowball (Albino or white)</option>
+           <option value="5">Point pattern (typically Siamese)</option>
+           <option value="6">Tortoiseshell</option>
+           </select></label>
+           <h2>Required information*</h2>
+         <label for="color">3. What is your cats major fur color?
+         <select class="inline" id="color" name="color">
+           <option value="">Select one</option>
+           <option value="1">Black</option>
+           <option value="2">Brown</option>
+           <option value="3">Chocolate</option>
+           <option value="4">Cinnamon</option>
+           <option value="5">Cream</option>
+           <option value="6">Gray</option>
+           <option value="7">Lilac</option>
+           <option value="8">Orange</option>
+           <option value="9">White</option>
+           <option value="10">Other</option>
+         </select></label>
+         <h2>Required information*</h2>
+         <label for="gender">4. What is your cats gender?
+         <select classs="inline" id="gender" name="gender">
+           <option value="">Select one</option>
+           <option value="1">Male</option>
+           <option value="2">Female</option>
+           </select></label>
+   </fieldset>
+   <fieldset>
+     <h3>Select the best fitting answer(s) to each question:</h3>
+     <h2>Required information*</h2>
+        <label>1. Does your cat prefer to be indoors or outdoors?</label>
+        <label for="indoor"><input value="indoor" id="indoor" type="radio" name="indoor-or-outdoor" class="inline" checked /> Indoor</label>
+        <label for="outdoor"><input value="outdoor" id="outdoor" type="radio" name="indoor-or-outdoor" class="inline" /> Outdoor</label>
+        <label for="both"><input value="both" id="both" type="radio" name="indoor-or-outdoor" class="inline" /> Both/Doesn't have a preference</label>
+        <h2>Required information*</h2>
+        <label>2. Does/will your cat hunt other animals?</label>
+        <label for="yes"><input value="yes" id="yes" type="radio" name="hunts" class="inline" checked /> Yes</label>
+        <label for="no"><input value="no" id="no" type="radio" name="hunts" class="inline" /> No</label>
+         <h2>Required information if answered yes previously*</h2>
+         <label>3. If so, what will they hunt? (select all which apply)</label>
+            <label for="rodents"><input id="rodents" type="checkbox" name="hunted" value="rodents" class="inline" /> Rodents (rats/mice)</label>
+            <label for="insects"><input id="insects" type="checkbox" name="hunted" value="insects" class="inline" /> Insects (cockroaches/beetles)</label>
+            <label for="arachnids"><input id="arachnids" type="checkbox" name="hunted" value="arachnids" class="inline"> Arachnids (Spiders)</label>
+            <label for="birds"><input id="birds" type="checkbox" name="hunted" value="birds" class="inline"> Birds</label>
+            <label for="reptiles"><input class="inline" id="reptiles" type="checkbox" name="hunted" value="reptiles" > Reptiles (snakes/lizards)</label>
+             <h2>Required information*</h2>
+        <label>4. Do you have any other pets besides your cat?</label>
+        <label for="yes"><input value="yes" id="yes" type="radio" name="other-pets" class="inline" checked /> Yes</label>
+        <label for="no"><input value="no" id="no" type="radio" name="other-pets" class="inline" /> No</label>
+        <h2>Required information if answered yes previously*</h2>
+        <label>5. If so, what other pet(s) do you have? (select all which apply)</label>
+            <label for="dog"><input id="dog" type="checkbox" name="other-pets" value="dog" class="inline"/> Dog(s) </label>
+            <label for="cat"><input id="cat" type="checkbox" name="other-pets" value="cat" class="inline"/> Cat(s) </label>
+            <label for="fish"><input id="fish" type="checkbox" name="other-pets" value="fish" class="inline"/> Fish (Freshwater or Saltwater) </label>
+            <label for="bird"><input id="bird" type="checkbox" name="other-pets" value="bird" class="inline"/> Bird(s) </label>
+            <label for="reptile"><input id="reptile" type="checkbox" name="other-pets" value="reptile" class="inline"/> Reptile(s) (Snake/Turtle/Lizard)</label>
+            <label for="rodent"><input id="rodent" type="checkbox" name="other-pets" value="rodent" class="inline"/> Rodent(s) (Hamster/Rat/Guinea pig)</label>
+            <label for="arthropods"><input id="arthropods" type="checkbox" name="other-pets" value="arthropods" class="inline"/> Arthropod(s) (Insect/Spider)</label>
+            <label for="other-mammal"><input id="other-mammal" type="checkbox" name="other-pets" value="other-mammal" class="inline"/> Other mammal(s) not listed (Rabbit/Bat/Monkey) </label>
+            <label for="exotic"><input id="exotic" type="checkbox" name="other-pets" value="exotic" class="inline"/> Any exotic animal (ex. Wolf/Large cats)</label>
+            <label for="other"><input id="other" type="checkbox" name="other-pets" value="other" class="inline"/> Other animal not listed: <input  id="other" name="other-pets" type="text"/></label>
+            <h2>Required information if answered yes to 4.*</h2>
+        <label>6. Does your cat get along with the other pet(s) in the household?</label>
+        <label for="yes"><input value="yes" id="yes" type="radio" name="gets-along" class="inline"/> Yes (100%)</label>
+        <label for="mostly"><input value="mostly" id="mostly" type="radio" name="gets-along" class="inline" /> Mostly (75%)</label>
+        <label for="sometimes"><input value="sometimes" id="sometimes" type="radio" name="gets-along" class="inline"/> Sometimes (50%)</label>
+        <label for="rarely"><input value="rarely" id="rarely" type="radio" name="gets-along" class="inline"/> Rarely (25%)</label>
+        <label for="no"><input value="no" id="no" type="radio" name="gets-along" class="inline" /> No (0%)</label>
+        <label for="no-pets"><input value="no-pets" id="no-pets" type="radio" name="gets-along" class="inline" checked /> No other pets</label> 
+      </fieldset>
+      <fieldset>
+        <h3>Give us some additional information about your cat:</h3>
+        <h2>Required information*</h2>
+        <label>1. How would you describe your cats personality? (select all which apply)</label>
+      <label for="adventurous"> <input type="checkbox" value="adventurous" id="adventurous" name="personality" class="inline"> Adventurous</label>
+      <label for="affectionate"> <input type="checkbox" value="affectionate" id="affectionate" name="personality" class="inline"> Affectionate</label>
+      <label for="aggressive"> <input type="checkbox" value="aggressive" id="aggressive" name="personality" class="inline"> Aggressive</label>
+      <label for="always-hungry"> <input type="checkbox" value="always-hungry" id="always-hungry" name="personality" class="inline"> Always hungry</label>
+      <label for="curious"> <input type="checkbox" value="curious" id="curious" name="personality" class="inline"> Curious</label>
+      <label for="energetic"> <input type="checkbox" value="energetic" id="energetic" name="personality" class="inline"> Energetic</label>
+      <label for="independent"> <input type="checkbox" value="independent" id="independent" name="personality" class="inline"> Independent</label>
+      <label for="intelligent"> <input type="checkbox" value="intelligent" id="intelligent" name="personality" class="inline"> Intelligent</label>
+      <label for="lazy"> <input type="checkbox" value="lazy" id="lazy" name="personality" class="inline"/> Lazy</label>
+      <label for="loyal"> <input type="checkbox" value="loyal" id="loyal" name="personality" class="inline"> Loyal</label>
+      <label for="observant"> <input type="checkbox" value="observant" id="observant" name="personality" class="inline"> Observant</label>
+      <label for="playful"> <input type="checkbox" value="playful" id="playful" name="personality" class="inline"> Playful</label>
+      <label for="shy"> <input type="checkbox" value="shy" id="shy" name="personality" class="inline"> Shy</label>
+      <label for="sleepy"> <input type="checkbox" value="sleepy" id="sleepy" name="personality" class="inline"> Sleepy</label>
+      <label for="sneaky"> <input type="checkbox" value="sneaky" id="sneaky" name="personality" class="inline"> Sneaky</label>
+      <label for="social"> <input type="checkbox" value="social" id="social" name="personality" class="inline"> Social</label>
+      <label for="territorial"> <input type="checkbox" value="territorial" id="territorial" name="personality" class="inline"> Territorial</label>
+      <label for="vocal"> <input type="checkbox" value="vocal" id="vocal" name="personality" class="inline"> Vocal</label>
+      <h2>Required information*</h2>
+        <label>2. What are your cats favorite activities? (select all which apply)</label>
+      <label for="being-mean"> <input type="checkbox" value="being-mean" id="being-mean" name="preferred-activites" class="inline"> Being mean/aggressive for no reason</label>
+      <label for="breaking"> <input type="checkbox" value="breaking" id="breaking" name="preferred-activites" class="inline"> Breaking fragile objects</label>
+      <label for="causing-noise"> <input type="checkbox" value="causing-noise" id="causing-noise" name="preferred-activites" class="inline"> Causing as much noise as possible at 3am</label>
+      <label for="eating"> <input type="checkbox" value="eating" id="eating" name="preferred-activites" class="inline"> Eating</label>
+      <label for="getting-into-stuff"> <input type="checkbox" value="getting-into-stuff" id="getting-into-stuff" name="preferred-activites" class="inline"> Getting into stuff they aren't supposed to</label>
+      <label for="hunting"> <input type="checkbox" value="hunting" id="hunting" name="preferred-activites" class="inline"> Hunting</label>
+      <label for="playing"> <input type="checkbox" value="playing" id="playing" name="preferred-activites" class="inline"> Playing</label>
+      <label for="sneak-attack"> <input type="checkbox" value="sneak-attack" id="sneak-attack" name="preferred-activites" class="inline"> Sneak attacking in a dark room</label>
+      <label for="sneaking-out"> <input type="checkbox" value="sneaking-out" id="sneaking-out" name="preferred-activites" class="inline"> Sneaking out</label>
+      <label for="stealing"> <input type="checkbox" value="stealing" id="stealing" name="preferred-activites" class="inline"> Stealing your chair/bed (stealing anything in general)</label>
+      <h2>Required information*</h2>
+        <label>3. Does your cat have or has ever had any of the following medical conditions? (select all which apply)</label>
+      <label for="acne"> <input type="checkbox" value="acne" id="acne" name="medical-condition" class="inline"> Acne</label>
+      <label for="allergies"> <input type="checkbox" value="allergies" id="allergies" name="medical-condition" class="inline"> Allergies</label>
+      <label for="anemia"> <input type="checkbox" value="anemia" id="anemia" name="medical-condition" class="inline"> Anemia</label>
+      <label for="arthritis"> <input type="checkbox" value="arthritis" id="arthritis" name="medical-condition" class="inline"> Arthritis</label>
+      <label for="asthma"> <input type="checkbox" value="asthma" id="asthma" name="medical-condition" class="inline"> Asthma</label>
+      <label for="bladder-infection"> <input type="checkbox" value="bladder-infection" id="bladder-infection" name="medical-condition" class="inline"> Bladder infection</label>
+      <label for="cancer"> <input type="checkbox" value="cancer" id="cancer" name="medical-condition" class="inline"> Cancer</label>
+      <label for="cardiomyopathy"> <input type="checkbox" value="cardiomyopathy" id="cardiomyopathy" name="medical-condition" class="inline"> Cardiomyopathy</label>
+      <label for="chronic-kd"> <input type="checkbox" value="chronic-kd" id="chronic-kd" name="medical-condition" class="inline"> Chronic Kidney Disease</label>
+      <label for="colitis"> <input type="checkbox" value="colitis" id="colitis" name="medical-condition" class="inline"> Colitis</label>
+      <label for="conjunctivitis"> <input type="checkbox" value="conjunctivitis" id="conjunctivitis" name="medical-condition" class="inline"> Conjunctivitis</label>
+      <label for="cystitis"> <input type="checkbox" value="cystitis" id="cystitis" name="medical-condition" class="inline"> Cystitis</label>
+      <label for="dental-disease"> <input type="checkbox" value="dental-disease" id="dental-disease" name="medical-condition" class="inline"> Dental Disease</label>
+      <label for="diabetes"> <input type="checkbox" value="diabetes" id="diabetes" name="medical-condition" class="inline"> Diabetes</label>
+      <label for="diarrhea"> <input type="checkbox" value="diarrhea" id="diarrhea" name="medical-condition" class="inline"> Diarrhea</label>
+      <label for="ear-infections"> <input type="checkbox" value="ear-infections" id="ear-infections" name="medical-condition" class="inline"> Ear Infections</label>
+      <label for="eclampsia"> <input type="checkbox" value="eclampsia" id="eclampsia" name="medical-condition" class="inline"> Eclampsia</label>
+      <label for="EGC"> <input type="checkbox" value="EGC" id="EGC" name="medical-condition" class="inline"> Eosinophilic Granuloma Complex</label>
+      <label for="eye-infections"> <input type="checkbox" value="eye-infections" id="eye-infections" name="medical-condition" class="inline"> Eye Infections</label>
+      <label for="flea-infestation"> <input type="checkbox" value="flea-infestation" id="flea-infestation" name="medical-condition" class="inline"> Flea Infestation</label>
+      <label for="feline-asthma"> <input type="checkbox" value="feline-asthma" id="feline-asthma" name="medical-condition" class="inline"> Feline Asthma</label>
+      <label for="feline-calicivirus"> <input type="checkbox" value="feline-calicivirus" id="feline-calicivirus" name="medical-condition" class="inline"> Feline Calicivirus</label>
+      <label for="feline-cryptosporidiosis"> <input type="checkbox" value="feline-cryptosporidiosis" id="feline-cryptosporidiosis" name="medical-condition" class="inline"> Feline Cryptosporidiosis</label>
+      <label for="panleukopenia"> <input type="checkbox" value="panleukopenia" id="panleukopenia" name="medical-condition" class="inline"> Feline Distemper (Panleukopenia)</label>
+      <label for="FIP"> <input type="checkbox" value="FIP" id="FIP" name="medical-condition" class="inline"> Feline Infectious Peritonitis (FIP)</label>
+      <label for="FIV"> <input type="checkbox" value="FIV" id="FIV" name="medical-condition" class="inline"> Feline Immunodeficiency Virus (FIV)</label>
+      <label for="FeLV"> <input type="checkbox" value="FeLV" id="FeLV" name="medical-condition" class="inline"> Feline Leukemia Virus (FeLV)</label>
+      <label for="FLUTD"> <input type="checkbox" value="FLUTD" id="FLUTD" name="medical-condition" class="inline"> Feline Lower Urinary Tract Disease (FLUTD)</label>
+      <label for="feline-parvovirus"> <input type="checkbox" value="feline-parvovirus" id="feline-parvovirus" name="medical-condition" class="inline"> Feline Parvovirus</label>
+      <label for="FUS"> <input type="checkbox" value="FUS" id="FUS" name="medical-condition" class="inline"> Feline Urologic Syndrome (FUS)</label>
+      <label for="gastrointestinal-issues"> <input type="checkbox" value="gastrointestinal-issues" id="gastrointestinal-issues" name="medical-condition" class="inline"> Gastrointestinal Issues</label>
+      <label for="gingivitis"> <input type="checkbox" value="gingivitis" id="gingivitis" name="medical-condition" class="inline"> Gingivitis</label>
+      <label for="hairballs"> <input type="checkbox" value="hairballs" id="hairballs" name="medical-condition" class="inline"> Hairballs</label>
+      <label for="heartworm-disease"> <input type="checkbox" value="heartworm-disease" id="heartworm-disease" name="medical-condition" class="inline"> Heartworm Disease</label>
+      <label for="hyperthyroidism"> <input type="checkbox" value="hyperthyroidism" id="hyperthyroidism" name="medical-condition" class="inline"> Hyperthyroidism</label>
+      <label for="hypertrophic-cardiomyopathy"> <input type="checkbox" value="hypertrophic-cardiomyopathy" id="hypertrophic-cardiomyopathy" name="medical-condition" class="inline"> Hypertrophic Cardiomyopathy</label>
+      <label for="intestinal-parasites"> <input type="checkbox" value="intestinal-parasites" id="intestinal-parasites" name="medical-condition" class="inline"> Intestinal Parasites</label>
+      <label for="kidney-disease"> <input type="checkbox" value="kidney-disease" id="kidney-disease" name="medical-condition" class="inline"> Kidney Disease</label>
+      <label for="liver-disease"> <input type="checkbox" value="liver-disease" id="liver-disease" name="medical-condition" class="inline"> Liver Disease</label>
+      <label for="lymphoma"> <input type="checkbox" value="lymphoma" id="lymphoma" name="medical-condition" class="inline"> Lymphoma</label>
+      <label for="mammary-gland-tumors"> <input type="checkbox" value="mammary-gland-tumors" id="mammary-gland-tumors" name="medical-condition" class="inline"> Mammary Gland Tumors</label>
+      <label for="mastitis"> <input type="checkbox" value="mastitis" id="mastitis" name="medical-condition" class="inline"> Mastitis</label>
+      <label for="megacolon"> <input type="checkbox" value="megacolon" id="megacolon" name="medical-condition" class="inline"> Megacolon</label>
+      <label for="miliary-dermatitis"> <input type="checkbox" value="miliary-dermatitis" id="miliary-dermatitis" name="medical-condition" class="inline"> Miliary Dermatitis</label>
+      <label for="mites"> <input type="checkbox" value="mites" id="mites" name="medical-condition" class="inline"> Mites</label>
+      <label for="obesity"> <input type="checkbox" value="obesity" id="obesity" name="medical-condition" class="inline"> Obesity</label>
+      <label for="otitis-externa"> <input type="checkbox" value="otitis-externa" id="otitis-externa" name="medical-condition" class="inline"> Otitis Externa</label>
+      <label for="pancreatitis"> <input type="checkbox" value="pancreatitis" id="pancreatitis" name="medical-condition" class="inline"> Pancreatitis</label>
+      <label for="periodontal-disease"> <input type="checkbox" value="periodontal-disease" id="periodontal-disease" name="medical-condition" class="inline"> Periodontal Disease</label>
+      <label for="pharyngitis"> <input type="checkbox" value="pharyngitis" id="pharyngitis" name="medical-condition" class="inline"> Pharyngitis</label>
+      <label for="pneumonia"> <input type="checkbox" value="pneumonia" id="pneumonia" name="medical-condition" class="inline"> Pneumonia</label>
+      <label for="polycystic-kidney-disease"> <input type="checkbox" value="polycystic-kidney-disease" id="polycystic-kidney-disease" name="medical-condition" class="inline"> Polycystic Kidney Disease</label>
+      <label for="rabies"> <input type="checkbox" value="rabies" id="rabies" name="medical-condition" class="inline"> Rabies</label>
+      <label for="respiratory-infections"> <input type="checkbox" value="respiratory-infections" id="respiratory-infections" name="medical-condition" class="inline"> Respiratory Infections</label>
+      <label for="ringworm"> <input type="checkbox" value="ringworm" id="ringworm" name="medical-condition" class="inline"> Ringworm</label>
+      <label for="salmonellosis"> <input type="checkbox" value="salmonellosis" id="salmonellosis" name="medical-condition" class="inline"> Salmonellosis</label>
+      <label for="skin-infections"> <input type="checkbox" value="skin-infections" id="skin-infections" name="medical-condition" class="inline"> Skin Infections</label>
+      <label for="stomatitis"> <input type="checkbox" value="stomatitis" id="stomatitis" name="medical-condition" class="inline"> Stomatitis</label>
+      <label for="UTI"> <input type="checkbox" value="UTI" id="UTI" name="medical-condition" class="inline"> Urinary Tract Infections</label>
+      <label for="other"> <input type="checkbox" value="other" id="other" name="medical-condition" class="inline"> Other not listed:<input  class="inline" id="other" name="medical-conditon" type="text"/></label>
+      <label for="none"> <input type="checkbox" value="none" id="none" name="medical-condition" class="inline"> No known medical conditions</label>
+      <h2>Required information*</h2>
+        <label>4. Does your cat have any of the following genetic mutations? (select all which apply)</label>
+      <label for="albinism"> <input type="checkbox" value="albinism" id="albinism" name="genetic-mutations" class="inline"/> Albinism</label>
+      <label for="cleft-lip"> <input type="checkbox" value="cleft-lip" id="cleft-lip" name="genetic-mutations" class="inline"/> Cleft Lip/Palate</label>
+      <label for="curly-tail"> <input type="checkbox" value="curly-tail" id="curly-tail" name="genetic-mutations" class="inline"/> Curly Tail</label>
+      <label for="dwarfism"> <input type="checkbox" value="dwarfism" id="dwarfism" name="genetic-mutations" class="inline"/> Dwarfism</label>
+      <label for="FeLV"> <input type="checkbox" value="FeLV" id="FeLV" name="genetic-mutations" class="inline"/> Feline Leukemia Virus (FeLV genetic predisposition)</label>
+      <label for="heterochromia"> <input type="checkbox" value="heterochromia" id="heterochromia" name="genetic-mutations" class="inline"/> Heterochromia</label>
+      <label for="lentigo"> <input type="checkbox" value="lentigo" id="lentigo" name="genetic-mutations" class="inline"/> Lentigo</label>
+      <label for="tailless"> <input type="checkbox" value="tailless" id="tailless" name="genetic-mutations" class="inline"/> Manx Tailless Gene</label>
+      <label for="osteochondrodysplasia"> <input type="checkbox" value="osteochondrodysplasia" id="osteochondrodysplasia" name="genetic-mutations" class="inline"/> Osteochondrodysplasia</label>
+      <label for="polycystic-kidney-disease"> <input type="checkbox" value="polycystic-kidney-disease" id="polycystic-kidney-disease" name="genetic-mutations" class="inline"/> Polycystic kidney disease</label>
+      <label for="polydactylism"> <input type="checkbox" value="polydactylism" id="polydactylism" name="genetic-mutations" class="inline"/> Polydactylism</label>
+      <label for="ragdoll-mutation"> <input type="checkbox" value="ragdoll-mutation" id="ragdoll-mutation" name="genetic-mutations" class="inline"/> Ragdoll Mutation</label>
+      <label for="sphinx-mutation"> <input type="checkbox" value="sphinx-mutation" id="sphinx-mutation" name="genetic-mutations" class="inline"/> Sphinx Mutation</label>
+      <label for="zygomatous-mange"> <input type="checkbox" value="zygomatous-mange" id="zygomatous-mange" name="genetic-mutations" class="inline"/> Zygomatous Mange</label>
+      <label for="other"> <input type="checkbox" value="other" id="other" name="genetic-mutations" class="inline"> Other not listed:<input  class="inline" id="other" name="genetic-mutations" type="text"/></label>
+      <label for="none"> <input type="checkbox" value="none" id="none" name="genetic-mutations" class="inline"> No known gentic mutations</label>
+      <h2>Required information*</h2>
+      <label for="favorite-dry">5. (a) In the textbox provided, please state your cats favorite dry food brand: <textarea  id="favorite-dry" name="favorite-dry" rows="1" cols="15" placeholder="ex. Blue Buffalo"></textarea>
+        </label>
+        <label for="favorite-wet">5. (b) In the textbox provided, please state your cats favorite wet food brand: <textarea  id="favorite-wet" name="favorite-wet" rows="1" cols="15" placeholder="ex. Fancy Feast"></textarea>
+        </label>
+        </fieldset>
+        <fieldset>
+        <h3>Give us your feedback!:</h3>
+<h2>Optional information*</h2>
+<label for="additional">1. Aside from the questions asked above, what else can you tell us about your cat? <textarea  id="additional" name="additonal" rows="1" cols="40"> </textarea>
+        </label>
+        <label for="feedback">2. Do you have any feedback you would like to share regarding this survey? <textarea  id="feedback" name="feedback" rows="1" cols="40"> </textarea>
+        </label>
+        </feildset>
+        <fieldset>
+          <h3> All done! Submit your answers!</h3>
+          <input id="submit" type="submit" Value="Submit">
+          </fieldset>
+    </form>
+  </main>
+</html>
